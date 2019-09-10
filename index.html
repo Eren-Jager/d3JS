@@ -7,6 +7,7 @@
    <link rel="stylesheet" type="text/css" href="style.css">
    <title>Rajya Sabha data </title>
    <script src="index.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
 </head>
 <body>
@@ -15,20 +16,20 @@
        seturl("start");
        </script>
         <h1 style="text-align: center">Rajya Sabha Data</h1><hr>
-        <p style="float: right;margin-right: 10%">
-            <a href="D3.html">D3JS-VISUALIZATION</a>
+        <p style="text-align: center">
+            <a href="D3.html">Graphs</a>
         </p>
         <p style="float: left; margin-left: 10%">Page Number
         <input onchange="seturl('pagechange')";
         type="number" name="PageNumber" value="1" id='pagenumber' min=1 max=1010>
         </p>
-        <p style="float: right;margin-right: 20%">
+        <p style="float: right;margin-right: 10%">
         <input type="text" placeholder="Search Ministry" id="ministry">
-        <input onclick="seturl('MinistrySearch')"; type="button" value="Search"name="MinistryName" id="search">
+        <input onclick="seturl('MinistrySearch')";  type="button" value="Search"name="MinistryName" id="search">
         </p>
         <hr>
    </header>
-   <div >
+   <section >
        <table class="table">
            <thead>
                <tr><th>ID</th>
@@ -39,6 +40,6 @@
            <tbody id="tab">
            </tbody>
        </table>
-   </div>
+    </section>
 </body>
 </html>
